@@ -1,9 +1,5 @@
 .navBar {
     display: flex;
-
-    position: fixed;
-    left: 0;
-    top: 0;
     
     justify-content: space-around;
     align-items: center;
@@ -35,6 +31,7 @@
 
 .wrapper li:hover {
     cursor: pointer;
+    opacity: 0.85;
 }
 
 .wrapper li::before {
@@ -47,14 +44,29 @@
     background: none;
 }
 
-
-
 .wrapper li:hover::before {
     background: #fa7f72;
     width: 100%;
     transition: 300ms all ease;
 }
 
+.searchBar {
+    display: flex;
+    align-items: center;
+}
+.searchBar input {
+    border: 2px solid #fa7f72;
+    border-radius: 1rem;
+    position: relative;
+    padding: 7px 0px 7px 0px;
+    padding-left: 23px;
+    width: 200px;
+}
+
+.searchIcon {
+    position: absolute;
+    margin-left: 8px;
+}
 
 .wrapperButtons{
     display: flex;
